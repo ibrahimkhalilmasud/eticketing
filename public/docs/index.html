@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/all.js"></script>
+
+
+          <script>
+        $(function() {
+            setupLanguages(["bash","javascript"]);
+        });
+      </script>
+      </head>
+
+  <body class="">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <img src="images/logo.png" />
+                    <div class="lang-selector">
+                                  <a href="#" data-language-name="bash">bash</a>
+                                  <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+                            <div class="search">
+              <input type="text" class="search" id="input-search" placeholder="Search">
+            </div>
+            <ul class="search-results"></ul>
+              <div id="toc">
+      </div>
+                    <ul class="toc-footer">
+                                  <li><a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a></li>
+                            </ul>
+            </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+          <!-- START_INFO -->
+<h1>Info</h1>
+<p>Welcome to the generated API reference.
+<a href="www.eticketing.com/docs/collection.json">Get Postman Collection</a></p>
+<!-- END_INFO -->
+<h1>AdminController</h1>
+<p>APIs for managing users</p>
+<!-- START_2b6e5a4b188cb183c7e59558cce36cb6 -->
+<h2>api/user</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/user" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/user");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "GET",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (401):</p>
+</blockquote>
+<pre><code class="language-json">{
+  "message": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/user</code></p>
+<!-- END_2b6e5a4b188cb183c7e59558cce36cb6 -->
+<!-- START_48a7274ef96dde9930b6ae7c41c9607d -->
+<h2>api/auth/Admin_login</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/auth/Admin_login" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/Admin_login");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "POST",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/auth/Admin_login</code></p>
+<!-- END_48a7274ef96dde9930b6ae7c41c9607d -->
+<!-- START_30198815972bdbeb23df1f571c6177df -->
+<h2>Register a User.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/auth/Admin_register" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/Admin_register");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "POST",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/auth/Admin_register</code></p>
+<!-- END_30198815972bdbeb23df1f571c6177df -->
+<h1>Ticket_templateController</h1>
+<p>APIs for managing users</p>
+<!-- START_3d0d02ce41ed87b8e39d5d89eb4c5126 -->
+<h2>api/auth/ticket_template</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/auth/ticket_template" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/ticket_template");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "POST",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/auth/ticket_template</code></p>
+<!-- END_3d0d02ce41ed87b8e39d5d89eb4c5126 -->
+<!-- START_3b3c192376ee8622f9aa4205d0341738 -->
+<h2>api/auth/user_template_request</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/auth/user_template_request" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/user_template_request");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "GET",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/auth/user_template_request</code></p>
+<!-- END_3b3c192376ee8622f9aa4205d0341738 -->
+<h1>TransactionController</h1>
+<p>APIs for managing users</p>
+<!-- START_51872e1304341611ec1374fe9c4e301a -->
+<h2>api/auth/transaction</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/auth/transaction" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/transaction");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "POST",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/auth/transaction</code></p>
+<!-- END_51872e1304341611ec1374fe9c4e301a -->
+<h1>general</h1>
+<!-- START_870df6e22bd2fd83749ae1ec35e1df1c -->
+<h2>Create a new AuthController instance.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/auth/index" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/index");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "GET",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">[
+  {
+    "id": 1,
+    "username": "admin1",
+    "phone_number": "01321234",
+    "email": "admin1@admin.com",
+    "created_at": "2020-08-19T05:47:02.000000Z",
+    "updated_at": "2020-08-19T05:47:02.000000Z"
+  },
+  {
+    "id": 2,
+    "username": "ibrahim1",
+    "phone_number": "011222333441",
+    "email": "ibrahim1@leanis.com",
+    "created_at": "2020-08-19T06:24:56.000000Z",
+    "updated_at": "2020-08-19T06:24:56.000000Z"
+  },
+  {
+    "id": 3,
+    "username": "admin",
+    "phone_number": "01211321312",
+    "email": "admin@admin.com",
+    "created_at": "2020-08-19T07:45:13.000000Z",
+    "updated_at": "2020-08-19T07:45:13.000000Z"
+  }
+]</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/auth/index</code></p>
+<!-- END_870df6e22bd2fd83749ae1ec35e1df1c -->
+<!-- START_a925a8d22b3615f12fca79456d286859 -->
+<h2>Get a JWT via given credentials.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/auth/login" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/login");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "POST",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/auth/login</code></p>
+<!-- END_a925a8d22b3615f12fca79456d286859 -->
+<!-- START_ade88ee476755a9706337cdabd78339b -->
+<h2>Register a User.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/auth/registration" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/registration");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "POST",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/auth/registration</code></p>
+<!-- END_ade88ee476755a9706337cdabd78339b -->
+<!-- START_c397c7fecffe452bd9a06a16d7632f3f -->
+<h2>Get the authenticated User.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/auth/userProfile" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/userProfile");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "GET",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/auth/userProfile</code></p>
+<!-- END_c397c7fecffe452bd9a06a16d7632f3f -->
+<!-- START_97063c2b34e2b9d1f9a42bc89a37455e -->
+<h2>api/auth/edit-records</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/auth/edit-records" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/edit-records");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "GET",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+  "id": 1,
+  "username": "admin1",
+  "phone_number": "01321234",
+  "email": "admin1@admin.com",
+  "created_at": "2020-08-19T05:47:02.000000Z",
+  "updated_at": "2020-08-19T05:47:02.000000Z"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/auth/edit-records</code></p>
+<!-- END_97063c2b34e2b9d1f9a42bc89a37455e -->
+<!-- START_eb9cf49fb4a9152bc61fc1003cf1eedd -->
+<h2>api/auth/ticket_template_show</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/auth/ticket_template_show" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/ticket_template_show");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "GET",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (500):</p>
+</blockquote>
+<pre><code class="language-json">{
+  "message": "Server Error"
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/auth/ticket_template_show</code></p>
+<!-- END_eb9cf49fb4a9152bc61fc1003cf1eedd -->
+<!-- START_b22760c1db6499d118529fd20515c87e -->
+<h2>api/auth/ticket_template_update</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/api/auth/ticket_template_update" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/ticket_template_update");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "GET",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/auth/ticket_template_update</code></p>
+<!-- END_b22760c1db6499d118529fd20515c87e -->
+<!-- START_61cb1a325cf1adc3638960373a67dada -->
+<h2>api/auth/ticket_template_update</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/auth/ticket_template_update" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/ticket_template_update");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "POST",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/auth/ticket_template_update</code></p>
+<!-- END_61cb1a325cf1adc3638960373a67dada -->
+<!-- START_bd20df41c9f6d04f9af025a8624b136f -->
+<h2>api/auth/transaction_update</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/api/auth/transaction_update" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/api/auth/transaction_update");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "POST",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/auth/transaction_update</code></p>
+<!-- END_bd20df41c9f6d04f9af025a8624b136f -->
+<!-- START_ff38dfb1bd1bb7e1aa24b4e1792a9768 -->
+<h2>Create a new AuthController instance.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/register" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/register");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "GET",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">[
+  {
+    "id": 1,
+    "username": "admin1",
+    "phone_number": "01321234",
+    "email": "admin1@admin.com",
+    "created_at": "2020-08-19T05:47:02.000000Z",
+    "updated_at": "2020-08-19T05:47:02.000000Z"
+  },
+  {
+    "id": 2,
+    "username": "ibrahim1",
+    "phone_number": "011222333441",
+    "email": "ibrahim1@leanis.com",
+    "created_at": "2020-08-19T06:24:56.000000Z",
+    "updated_at": "2020-08-19T06:24:56.000000Z"
+  },
+  {
+    "id": 3,
+    "username": "admin",
+    "phone_number": "01211321312",
+    "email": "admin@admin.com",
+    "created_at": "2020-08-19T07:45:13.000000Z",
+    "updated_at": "2020-08-19T07:45:13.000000Z"
+  }
+]</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET register</code></p>
+<!-- END_ff38dfb1bd1bb7e1aa24b4e1792a9768 -->
+<!-- START_3c0f49a36cbefdbd8152c751c117b4cd -->
+<h2>Register a User.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/registration" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL("http://localhost/registration");
+
+let headers = {
+  "Content-Type": "application/json",
+  Accept: "application/json",
+};
+
+fetch(url, {
+  method: "POST",
+  headers: headers,
+})
+  .then((response) =&gt; response.json())
+  .then((json) =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST registration</code></p>
+<!-- END_3c0f49a36cbefdbd8152c751c117b4cd -->
+      </div>
+      <div class="dark-box">
+                        <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                              </div>
+                </div>
+    </div>
+  </body>
+</html>

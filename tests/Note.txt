@@ -1,0 +1,41 @@
+https://ixdotuat.azurewebsites.net/Repo 
+   Popup Notification not translated
+
+Available Repurchase Agreement 
+
+Popup Button function error
+
+My Order
+
+cash leg
+
+
+https://ixdotuat.azurewebsites.net/Coswap
+   Popup Notification not translated
+
+ 
+
+Attention!
+
+Custodian Bank Setting is incomplete. Please add them via Client Admin page accordingly. Please contact us if you need assistances.
+
+
+Please Select
+
+
+
+
+
+https://ixdotuat.azurewebsites.net/FXSWAP/Index
+
+   Show All My Price
+
+   Standard tenor
+
+   Custom Tenor
+ 
+   Best Bid/Ask
+  
+   Recently Traded
+  
+   Ref Id, Counterpart, Amount, Bought, Sold ,Date Traded 
