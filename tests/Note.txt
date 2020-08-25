@@ -17,7 +17,7 @@ https://ixdotuat.azurewebsites.net/Coswap
 
 Attention!
 
-Custodian Bank Setting is incomplete. Please add them via Client Admin page accordingly. Please contact us if you need assistances.
+Custodian Bank Setting is incomplete. Please add them via Client Admin page accordingly. Please contact us if you need assistance.
 
 
 Please Select
