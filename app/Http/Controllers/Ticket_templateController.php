@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\TicketTemplate;
+use App\User;
 use DB;
 use Illuminate\Http\Request;
 use Validator;
@@ -84,6 +85,58 @@ class Ticket_templateController extends Controller
             // $users = $users->fresh();
         }
     }
+    public function index(Request $request)
+    {
+
+        // user() is a helper for Auth::user()
+        $tickets = user()->tickets()->open()->paginate(4);
+        // $users = DB::select('select * from student');
+        $users = DB::select('select * from ticket_templates');
+        return User::find(1);
+    }
+
+    /**
+     * Get the authenticated User.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+
+    public function ticket_template_show(Request $request)
+    {
+
+        // $validator = Validator::make($request->all(), [
+        //     'token' => 'string',
+
+        // ]);
+        // if ($validator->fails()) {
+        //     return response()->json($validator->errors(), 422);
+        // }
+        // // dd($request->all());
+        // if (!$token = auth()->attempt($validator->validated())) {
+        //     return response()->json(['error' => 'Unauthorized'], 401);
+        // }
+
+        $user = auth()->user();
+
+        return response()->json([
+            $ticket_templates = TicketTemplate::find($user)]);
+
+    }
+
+    // public function ticket_template_show($id)
+    // {
+    //     // dd($request->all());
+
+    //     // $users = DB::select('select * from ticket_templates');
+    //     // $users = DB::select(['select * from ticket_templates where id = ?'], [$id]);
+
+    //     // If the ticket does not belong to the logged in user, abort
+    //     if ($ticket->user_id != user()->id) {
+    //         abort(403, 'This is not your ticket');
+    //     }
+    //     return response()->json(auth()->user());
+    //     echo $this->hasMany(Ticket::class);
+    // }
 
     protected function createNewToken($token)
     {

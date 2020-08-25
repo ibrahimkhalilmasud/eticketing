@@ -51,13 +51,13 @@ Route::group([
 
     // Route::get('/ticket_template', 'Ticket_templateController@ticket_template');
     Route::get('user_template_request', 'Ticket_templateController@user_template_request');
+    Route::get('ticket_template_show', 'Ticket_TemplateController@ticket_template_show');
 
     // Route::post('ticket_template_status', 'Ticket_templateController@ticket_template_status');
 
     //Ticket_template update
     Route::get('edit-records', 'TicketTemplateUpdateController@index');
-    Route::get('show', 'TicketTemplateUpdateController@show');
-    Route::get('ticket_template_show', 'TicketTemplateUpdateController@ticket_template_show');
+
     Route::get('ticket_template_update', 'TicketTemplateUpdateController@ticket_template_update');
     Route::post('ticket_template_update', 'TicketTemplateUpdateController@ticket_template_update');
 
@@ -87,5 +87,3 @@ Route::group([
 // });
 
 // ticket_template function
-
-

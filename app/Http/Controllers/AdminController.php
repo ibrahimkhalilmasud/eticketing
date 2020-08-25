@@ -12,6 +12,13 @@ use Validator;
  *
  * APIs for managing users
  */
+
+/**
+ * Complete the registration of the User
+ *
+ * @param  \Illuminate\Http\Request $request
+ * @return \Illuminate\Http\Response
+ */
 class AdminController extends Controller
 {
     //

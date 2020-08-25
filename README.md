@@ -59,3 +59,117 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<<<<<<< HEAD
+=======
+# eticketing
+
+
+
+composer global require laravel/installer
+
+composer update
+
+
+git clone https://github.com/laravel/laravel.git
+
+cd /Applications/XAMPP/xamppfiles/htdocs/eticketing 
+
+composer instal
+
+
+composer require tymon/jwt-auth
+
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider”
+
+
+ php artisan config:publish tymon/jwt-auth
+
+
+
+php artisan config:clear
+
+php artisan config:cache
+
+php artisan vendor:publish
+
+php artisan jwt:secret
+
+
+
+
+Run
+	php artisan serve
+		server started: http://127.0.0.1:8000
+
+
+
+
+
+/// if I have and existence database and you want to pull use the code below 
+	php artisan migrate:refresh
+
+
+
+
+Delete the old user.php /// inside the app
+Create a new user.php
+
+Php artisan make:model user -m  (php artisan make:model TicketTemplate -m)
+
+
+Model = creating a file inside App folder
+
+m = migrate
+
+Create a new NAME controller
+
+
+Php artisan make:controller NAME
+
+
+////////
+$student = Student::find($id);
+
+
+$student = Referring to anything 
+
+Student = Referring to Database table
+
+Find = to find inside the database
+
+($id) = is this column name Inside database
+
+
+
+
+
+Validation Unique
+
+$validator = Validator::make($request->all(), [
+            'token' => 'required',
+            'template_id' => 'required|integer|max:10|unique:ticket_templates,template_id',
+            'template_title' => 'required|string|between:2,100',
+            'template_body' => 'required|string|between:2,100',
+            'template_attachment' => 'required|string|between:2,100',
+
+        ]);
+Note’s- ticket_templates = Table Name
+	template_id.     = Column Name
+
+
+
+Database update 
+
+$list = DB::table('ticket_templates') 
+->where('id', 4)
+->get();
+
+
+Note’s- Ticket_templates=Name of the updating Table
+	Id= Column Name
+	Where =put the condition 
+composer --version
+
+
+
+>>>>>>> 32f11126b417cbb991e6ce3feaa1107fe871fcad

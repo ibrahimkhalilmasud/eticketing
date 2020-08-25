@@ -25,6 +25,7 @@ class TicketTemplateUpdateController extends Controller
         // $users = DB::select('select * from ticket_templates');
         $users = DB::select('select * from ticket_templates where id = ?', [$id]);
         return response()->json(auth()->user());
+        return $this->belongsTo(User::class);
 
     }
 
